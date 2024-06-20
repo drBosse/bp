@@ -90,14 +90,15 @@ def bp_figure(df_data, time):
     )
     if time == "m":
         figure.add_hline(y=130,line_color="blue",line_dash="dash",
-              annotation_text="VC 06-10 Upper",
+              annotation_text="VC 06-10",
               annotation_position="bottom right")
         figure.add_hline(y=80,line_color="orange",line_dash="dash",
-              annotation_text="VC 06-10 Lower",
+              annotation_text="VC 06-10",
               annotation_position="bottom right")
         figure.add_hline(y=72,line_color="green",line_dash="dash",
-              annotation_text="VC 06-10 Pulse",
+              annotation_text="VC 06-10",
               annotation_position="bottom right")
+        figure.add_vline(x="2024-06-10", line_dash="dot")
 
     figure.add_hrect(y0=140, y1=160, line_width=0, fillcolor="red", opacity=0.2)
     figure.add_hrect(y0=60, y1=90, line_width=0, fillcolor="green", opacity=0.2)
