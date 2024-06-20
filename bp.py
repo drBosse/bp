@@ -54,7 +54,7 @@ def bpvp_figure(df_data, time):
         y=["upper", "lower"],
         marginal_x="box",
         marginal_y="box",
-        trendline="ols",
+        trendline="lowess",
         template="simple_white",
     )
     figure.update_layout(
@@ -76,7 +76,7 @@ def bp_figure(df_data, time):
         x="date",
         y=["upper", "lower", "pulse"],
         marginal_y="box",
-        trendline="ols",
+        trendline="lowess",
     )
     figure.update_layout(
         legend=dict(
